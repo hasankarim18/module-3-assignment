@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.container {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+
+
+@layer components {
+    html {
+  scroll-behavior: smooth;
+    }
+    .button{
+        @apply bg-gray-800  text-white p-2 rounded-xl hover:bg-gray-950;
+    }
+
+    .box {
+        @apply p-4 rounded-lg border mb-4 ;
+    }
+
+    .hr{
+        @apply mt-4 mb-4 border-2 border-transparent border-t-emerald-300
+    }
+
+    .dinput{
+        @apply input m-1 p-2 border-red-200 border-2 w-full ;
+    }
+
+    .ilabel{
+        @apply text-xl;
+    }
+
+    .menu li {
+        @apply  cursor-pointer text-blue-400 hover:text-blue-600; 
+    }
+
+    .highlight{
+        @apply bg-yellow-300;
+    }
+}

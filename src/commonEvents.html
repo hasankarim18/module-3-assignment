@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>7</title>
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body   style="scroll-behavior: smooth;" >
+    <div class="wrapper relative " >
+    <div id="top"></div>
+    <div class="fixed bg-black p-2 rounded-xl text-white bottom-5 right-4" >
+      <a href="#top">Go Top</a>
+    </div>
+    <div >
+      <div class="container p-4 mx-auto mt-4">
+        <h1 class="text-3xl font-bold text-blue-600">Module 3 Question 7</h1>
+        <div class="p-4">
+          <h3 class="text-3xl">
+            Navigation
+          </h3>
+          <ul class="menu">
+            <li><a href="index.html">Home Page</a></li>           
+          </ul>
+        </div>
+        <div class="">
+          <!-- ************************** -->
+          <!-- #7 question one -->
+          <div>
+            <p class="my-4">
+               <strong> 7.JS Common Events:</strong> <br>
+                Implement a webpage with the following functionality:
+                a. When the user clicks anywhere on the page, display an alert with the coordinates (x, y) of the click. <br>
+                b. When the user presses any key on the keyboard, display an alert with the key code of the pressed key. <br>
+                c. When the user moves the mouse over an image, change the image source to another image of your choice.
+            </p>
+            <img 
+              class="cursor-pointer"
+              id="image" style="width: 400px;height: 300px;" src="https://cdn.pixabay.com/photo/2023/03/27/18/06/bird-7881393_640.jpg" alt="">
+          </div>
+          
+       
+      </div>
+    </div>
+  </div>
+    
+  
+  <script>
+        // co-ordinates
+        document.addEventListener('click', function(event) {
+         const x = event.clientX;
+         const y = event.clientY;
+        alert('Clicked at coordinates (x, y): ' + x + ', ' + y);
+        });
+
+        // key events 
+        document.addEventListener('keyup', function(event) {
+        const keyCode = event.keyCode;
+        const keyName = event.key
+        alert('Pressed key with code: ' + keyCode + " And name : " + keyName);
+        });
+
+        const image = document.getElementById("image")
+
+        image.addEventListener('mouseover', ()=> {
+            image.src = "https://cdn.pixabay.com/photo/2023/03/05/16/20/sea-7831815__340.jpg"
+            
+        })
+        image.addEventListener('mouseout', ()=> {
+            image.src = "https://cdn.pixabay.com/photo/2023/03/27/18/06/bird-7881393_640.jpg"
+            
+        })
+
+
+   </script>
+
+
+
+  </body>
+</html>

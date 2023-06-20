@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Module 3</title>
+    <link rel="stylesheet" href="./output.css" />
+    <script
+      src="https://kit.fontawesome.com/1090098403.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body style="scroll-behavior: smooth">
+    <div class="wrapper relative">
+      <div id="top"></div>
+      <div class="fixed bg-black hover:bg-opacity-100 bg-opacity-80 p-2 rounded-xl text-white bottom-5 right-4">
+        <a class="w-8 h-8 items-center flex justify-center "  href="#top">
+          <i class="fa-solid fa-arrow-up text-2xl hover:text-red-200"></i>
+        </a>
+      </div>
+      <div>
+        <h1 class="text-3xl font-bold text-blue-600">Module 3 Assignment</h1>
+        <div class="container p-4 mx-auto mt-4 grid grid-cols-[_1fr,_3fr]">
+          <div class="p-4 relative">
+            <h3 class="text-3xl">Navigation</h3>
+            <ul class="menu sticky left-0 top-0">
+              <li><a href="index.html">Home Page</a></li>
+              <li><a href="#q1">Question 1: Date Object</a></li>
+              <li><a href="#q2">Question 2: Math Object</a></li>
+              <li><a href="#q3">Question 3: Math Numbers</a></li>
+              <li><a href="#q4">Question 4: Window Object</a></li>
+              <li><a href="#q5">Question 5: Navigator Object</a></li>
+              <li><a href="#q6">Question 6: Geolocation </a></li>
+            
+              <li>
+                <a href="./commonEvents.html">
+                  Question 7: Common Events Page
+                  <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#q8">Question 8: HTML DOM Document </a>
+              </li>
+                <li><a href="#q9">Question 9: Js Working with Form Input </a></li>
+                <li><a href="#q10">Question 10: DOM Manipulate CSS Class: </a></li>
+                <li><a href="#q11">Question 11: Create Element and append element: </a></li>
+                <li><a href="#q12">Question 12: Dom Change Attribute value: </a></li>
+                <li><a href="#q13">Question 13: DOM Query Selector: </a></li>
+                <li><a href="#q14">Question 14: AJAX Get Request: </a></li>
+                <li><a href="#q15">Question 15.AJAX Post Request: </a></li>
+            </ul>
+          </div>
+
+          <div class="">
+            <!-- ************************** -->
+            <!-- #1 question one -->
+            <div class="box">
+              <p>
+                1.Date Object: <br />
+                <strong> Question: </strong> a. Create a function that takes a
+                date in the format "YYYY-MM-DD" as a parameter and returns the
+                day of the week for that date. The function should use the Date
+                object. <br />
+              </p>
+
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2">
+                  <label for="">Select Date</label> <br />
+                  <input
+                    id="date_input"
+                    type="date"
+                    class="input input-bordered p-2 border"
+                  />
+                  <button id="convert_date" class="btn">Get Week Day</button>
+                </div>
+                <div class="">
+                  <h3>Output:</h3>
+                  <div id="r1" class="">
+                    <!-- result -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #2 question one -->
+            <div id="q2" class="box">
+              <p>
+                <strong>2.Math Object:</strong>
+                a. Write a JavaScript function that takes an array of numbers as
+                input and returns the square root of the sum of squares of all
+                the numbers. Use the Math object to perform the necessary
+                calculations.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2 p-4">
+                  <label class="ilabel" for=""
+                    >Put Numbers Using a Comma(,)</label
+                  >
+                  <br />
+                  <input id="arr_input" type="text" class="dinput" />
+                  <button id="" class="btn">Square root of the sum</button>
+                </div>
+                <div class="p-4">
+                  <h3>Output:</h3>
+                  <div id="r2" class="text-xl font-semibold">
+                    <!-- result -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #3 question one -->
+            <div id="q3" class="box">
+              <p>
+                <strong>3.Numbers::</strong>
+                a. Write a JavaScript function that takes a positive integer as
+                input and returns true if it is a prime number, otherwise
+                returns false.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2 p-4">
+                  <label class="ilabel" for=""> Put a value > 0 </label>
+                  <br />
+                  <input
+                    id="prime_input"
+                    type="number"
+                    min="1"
+                    class="dinput input"
+                  />
+                  <button id="" class="btn button">Check Prime Number</button>
+                </div>
+                <div class="p-4">
+                  <h3>Output:</h3>
+                  <div id="r3" class="text-xl result font-semibold">
+                    <!-- result -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #4 question one -->
+            <div id="q4" class="box">
+              <p>
+                <strong>4.Window Object:::</strong>
+                a. Create a function that opens a new window with a specified
+                URL and dimensions (width and height).
+                <br />
+                b. Implement the function to open a new window with the URL
+                "https://www.example.com" and dimensions 800x600.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2 p-4">
+                  <!-- <label class="ilabel" for=""> Put a value > 0 </label> -->
+                  <br />
+                  <!-- <input
+                  id="arr_input"
+                  type="number"
+                  min="1"
+                  class="dinput input"
+                /> -->
+                  <button id="" class="btn button">Open Window</button>
+                </div>
+                <div class="p-4">
+                  <!-- <h3>Output:</h3> -->
+                  <!-- <div id="r3" class="text-xl result font-semibold"> -->
+                  <!-- result -->
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #5 question one -->
+            <div id="q5" class="box">
+              <p>
+                <strong>5.Navigator Object:</strong>
+                a. Write a JavaScript function that detects the user's browser
+                name and version using the navigator object.
+                <br />
+                b. Implement the function to display the user's browser name and
+                version.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2 p-4">
+                  <!-- <label class="ilabel" for=""> Put a value > 0 </label> -->
+                  <br />
+                  <!-- <input
+                  id="arr_input"
+                  type="number"
+                  min="1"
+                  class="dinput input"
+                /> -->
+                  <button id="" class="btn button">Get Browser Info</button>
+                </div>
+                <div class="p-4">
+                  <h3>Output:</h3>
+                  <div id="r5" class="text-xl result font-semibold">
+                    <!-- result -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- #6 question one -->
+            <div id="q6" class="box">
+              <p>
+                <strong> 6.Geolocation:</strong>
+                6.Geolocation: a. Implement a JavaScript function that retrieves
+                the user's current location (latitude and longitude) using the
+                geolocation API.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-2">
+                <div class="border-r-2 p-4">
+                  <!-- <label class="ilabel" for=""> Put a value > 0 </label> -->
+                  <br />
+                  <!-- <input
+                  id="arr_input"
+                  type="number"
+                  min="1"
+                  class="dinput input"
+                /> -->
+                  <label for="">Please Double Click</label> <br />
+                  <button id="" class="btn button">Get Geo Location</button>
+                </div>
+                <div class="p-4">
+                  <h3>Output:</h3>
+                  <div id="r6" class="text-xl result font-semibold">
+                    <!-- result -->
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #8 question one -->
+            <div id="q8" class="box">
+              <p>
+                <strong>8.HTML DOM Document:</strong>
+                a. Create a webpage with a button and a paragraph element.
+                <br />
+                b. Implement a JavaScript function that changes the text content
+                of the paragraph element to "Button Clicked!" when the button is
+                clicked.
+              </p>
+              <div class="mt-4 q1 box gap-4 grid grid-cols-1">
+                <div class="border-r-2 p-4">
+                  <p id="change-text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Ratione doloremque odio voluptatum exercitationem officiis
+                    inventore accusantium enim, animi sapiente? Consectetur
+                    omnis magnam temporibus ipsam, incidunt distinctio illo ipsa
+                    harum maxime mollitia rem id, facere obcaecati sequi earum
+                    cumque officia dolore. Animi excepturi veritatis suscipit
+                    temporibus? Atque asperiores aut nulla officia.
+                  </p>
+
+                  <button id="" class="btn button mt-4">Button Clicked</button>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- *************  9 -->
+            <!-- #9 -->
+            <div id="q9" >
+              <div class="box">
+              <h2 class="text-xl capitalize font-bold">
+               9. JS DOM WORKING WITH FORM INPUT
+              </h2>
+              <form class="p-4 border" id="myForm">
+                <div>
+                  <label for="name">Name:</label>
+                  <input class="dinput" type="text" id="name" name="name" />
+                  <span id="nameError" class="error"></span>
+                </div>
+                <div>
+                  <label for="email">Email:</label>
+                  <input class="dinput"  type="email" id="email" name="email" />
+                  <span id="emailError" class="error"></span>
+                </div>
+                <div>
+                  <label for="password">Password:</label>
+                  <input class="dinput" type="password" id="password" name="password" />
+                  <span id="passwordError" class="error"></span>
+                </div>
+                <div>
+                  <label for="confirmPassword">Confirm Password:</label>
+                  <input class="dinput"
+                    type="password"
+                    id="confirmPassword"
+                    name="confirmPassword"
+                  />
+                  <span id="confirmPasswordError" class="error"></span>
+                </div>
+                <button class="mt-2 btn btn-lg btn-success" type="submit">Submit</button>
+              </form>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #10 -->
+            <div id="q10" >
+              <div class="box">
+                 <h2 class="text-xl capitalize font-bold">
+                10. DOM Manipulation css class
+                </h2>
+                <p id="text" class="text text-xl p-2 rounded-xl " >
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit minus saepe, dolor hic voluptatem voluptatum accusamus, quidem similique autem perspiciatis reiciendis facere repellendus eligendi debitis impedit, ut nisi culpa aperiam.
+                </p>
+                <div>
+                  <button class="btn button mt-4">High Light</button>
+                  <button id="remove_highLight" class="btn btn-error mt-4">Remove High Light</button>
+                </div>
+              </div>
+            </div>
+            <div class="hr"></div>
+            <!-- #11 -->
+            <div id="q11" >
+              <div class="box">
+                <p class="text-xl" >
+                  <strong>11.Create Element & Append Element:</strong> <br> 
+                  a. Create a webpage with an empty unordered list (ul). <br>
+                  b. Implement a JavaScript function that dynamically creates five list items (li) with sequential numbers (1 to 5) and appends them to the unordered list
+                </p>
+                <div class="my-4">
+                  <button id="createList" class="btn button">Create List Below</button>
+                </div>
+                <ul id="appendListContainer" class="">
+
+                </ul>
+              </div>
+
+            </div>
+            <!-- #12 -->
+            <div id="q12" >
+              <div class="box">
+                <p class="text-xl" >
+                  <strong>12. DOM Change Attribute Value::</strong> <br> 
+                  a. Create a webpage with an image element (img) that has an initial source URL. <br>
+                  b. Implement a JavaScript function that changes the source URL of the image element when a button is clicked. Use a different image URL of your choice.
+                </p>
+                <div>
+                  <img id="c_image" style="width: 400px; height: 300px;" src="https://cdn.pixabay.com/photo/2021/12/17/11/56/waterfall-6876350__340.jpg" alt="">
+                </div>
+                <div class="my-4">
+                  <button id="changeImage" class="btn button">Change Image</button> 
+                  <button id="p_image" class="btn">Previous Image</button>
+                </div>
+                
+              </div>
+
+            </div>
+            <div class="hr"></div>
+            <!-- #13 -->
+            <div id="q13" >
+              <div class="box">
+                <p class="text-xl" >
+                  <strong>13. DOM Query Selector:</strong> <br> 
+                 a. Create a webpage with multiple paragraphs containing different classes and IDs. <br>
+                 b. Implement a JavaScript function that selects all paragraphs with a specific class and changes their text color to red.
+                </p>
+                <div>                  
+                <div class="my-4">                 
+                  <button  id="c_black" class="btn btn-xs"> Black</button>
+                  <button id="c_red" class="btn btn-xs btn-error">  red</button>
+                  <button id="c_green" class="btn btn-xs btn-success">  green</button>
+                  <button id="c_yellow" class="btn-xs btn btn-warning"> yellow</button>
+                  <button id="c_blue" class="btn btn-primary btn-xs"> blue</button>
+                </div>
+                <div>
+                  <p class="colored_text box text-xl font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellat iure possimus vero velit soluta laborum a corporis quos, reprehenderit sit blanditiis similique vitae voluptatibus beatae obcaecati illum quisquam saepe!
+                  </p>
+                  <p class="colored_text box text-xl font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellat iure possimus vero velit soluta laborum a corporis quos, reprehenderit sit blanditiis similique vitae voluptatibus beatae obcaecati illum quisquam saepe!
+                  </p>
+                  <p class="colored_text box text-xl font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellat iure possimus vero velit soluta laborum a corporis quos, reprehenderit sit blanditiis similique vitae voluptatibus beatae obcaecati illum quisquam saepe!
+                  </p>
+                  <p class="colored_text box text-xl font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellat iure possimus vero velit soluta laborum a corporis quos, reprehenderit sit blanditiis similique vitae voluptatibus beatae obcaecati illum quisquam saepe!
+                  </p>
+                  <p class="colored_text box text-xl font-semibold">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur repellat iure possimus vero velit soluta laborum a corporis quos, reprehenderit sit blanditiis similique vitae voluptatibus beatae obcaecati illum quisquam saepe!
+                  </p>
+                </div>
+                
+              </div>
+
+            </div>
+
+            <!-- ******************************** -->
+          </div>
+          <!-- #14 -->
+          <div id="q14">
+              <div class="box">
+                <p>
+                  <strong>14.AJAX Get Request:</strong>
+                  a. Implement a JavaScript function that sends an AJAX GET request to the following URL: "https://api.example.com/data".
+                </p>
+                <div>
+                   <code>
+                  function sendGetRequest() { <br>
+                  const url = 'https://api.example.com/data'; <br>
+
+                axios.get(url) <br>
+                  .then(response => { <br>
+                    // Handle the response data <br>
+                    console.log(response.data); <br>
+                  }) <br>
+                  .catch(error => { <br>
+                    // Handle any errors <br>
+                    console.error('Error:', error); <br>
+                  }); <br>
+              } <br>
+
+              // Call the function to send the GET request <br>
+              sendGetRequest(); <br>
+
+                </code>
+                </div>
+                <div class="mt-4">
+                    <h3><strong>Example</strong></h3>
+                    <button id="getBlog" class="btn btn-success ">Click to show Fetch blogs from json placeholder</button>
+                    <div class="mt-4">
+                      <ul id="blog_container" class="">
+
+                      </ul>
+                    </div>
+                </div>
+
+              </div>
+          </div>
+          <div class="hr"></div>
+          <!-- #15 -->
+          <div id="q15" class="box">
+              <strong>15.AJAX Post Request:</strong>
+                 a. Implement a JavaScript function that sends an AJAX POST request to the following URL: "https://api.example.com/submit".
+                 <br>
+                 b. Send a JSON payload with the following data: { "name": "John Doe", "email": "johndoe@example.com" }.
+                </p>
+                <div class="my-4">
+<pre>
+<code>
+cosnt payload = {
+   "name": "John Doe", "email": "johndoe@example.com" 
+}
+axios.post("https://api.example.com/submit",payload )
+.then(res => {
+  console.log(res.data)
+  alert('Submit successful')
+} )
+.catch((error)=> {
+  console.log(error)
+  alert("Some thing went wrong")
+})
+</code>
+</pre>
+                </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
