@@ -425,3 +425,25 @@ document.getElementById("getBlog").addEventListener('click', ()=> {
 })
 
 
+
+ * function postUser(){
+const payload = {
+   "name": "John Doe", "email": "johndoe@example.com" 
+}
+axios.post("https://api.example.com/submit",payload )
+.then(res => {
+  console.log(res.data)
+  alert('Submit successful')
+} )
+.catch((error)=> {
+  console.log(error)
+  alert("Some thing went wrong")
+})
+}
+
+document.getElementById('submit_btn').addEventListener("click", ()=> {
+postUser()
+})
+ 
+
+

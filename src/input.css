@@ -36,10 +36,16 @@
     }
 
     .menu li {
-        @apply  cursor-pointer text-blue-400 hover:text-blue-600; 
+        @apply  cursor-pointer text-blue-500 hover:text-blue-700 font-semibold; 
     }
 
     .highlight{
         @apply bg-yellow-300;
     }
+
+.m-item.active {
+    @apply text-xl text-white;
+
+}
+
 }
